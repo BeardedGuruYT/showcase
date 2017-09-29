@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class FilterStrings extends Component {
+class FilterString extends Component {
     render(){
         return(
             <p>FilterString</p>

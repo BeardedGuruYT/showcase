@@ -9,21 +9,14 @@ import Sum from './components/Topics/Sum';
 class App extends Component {
   render() {
     return (
-<<<<<<< HEAD
       <div>
         <TopicBrowser />
         <EvenAndOdd />
         <FilterObject />
-      </div>
-=======
-       <TopicBrowser />
-       <EvenAndOdd />
-        <FilterObject />
         <FilterString />
         <Palindrome />
         <Sum />
->>>>>>> 9fac5f62dfb22b073fc59c4ed772d8a1dee1ecce
-
+      </div>
     );
   }
 }
