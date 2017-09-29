@@ -9,9 +9,11 @@ import Sum from './components/Topics/Sum';
 class App extends Component {
   render() {
     return (
-      // <TopicBrowser />
-      // <EvenAndOdd />
-      <FilterObject />
+      <div>
+        <TopicBrowser />
+        <EvenAndOdd />
+        <FilterObject />
+      </div>
 
     );
   }
