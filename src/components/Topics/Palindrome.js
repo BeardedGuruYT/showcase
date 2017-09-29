@@ -9,4 +9,3 @@ class Palindrome extends Component {
 }
 
 export default Palindrome;
-
