@@ -33,7 +33,8 @@ class EvenAndOdd extends Component {
             <div className="puzzleBox evenAndOddPB">
                 <h4>Evens and Odds</h4>
                 <input  className="inputLine"
-                        onChange={ (e)=> this.updateInput(e) }/>
+                        onChange={ (e)=> this.updateInput(e) }
+                        placeholder="Enter a list of numbers"/>
                 <button className="confirmationButton"
                         onClick={ (e)=> this.solve() }>Split</button>
                 <span className="resultsBox">Evens: [{ this.state.evenArray.join(", ") }]</span>

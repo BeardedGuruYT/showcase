@@ -46,7 +46,8 @@ constructor () {
                 <h4>Filter Objects</h4>
                 <span className="puzzleText">Original:  { JSON.stringify(this.state.unfilteredArray) } </span>
                 <input className="inputLine"
-                        onChange ={(e)=> this.getUserInput(e)}></input>
+                        onChange ={(e)=> this.getUserInput(e)}
+                        placeholder="Enter a property"></input>
                 <button className="confirmationButton"
                 onClick = {(e) => this.solve() }>Filter</button>
                 <span className="resultsBox filterObjectRB">Filtered: { JSON.stringify(this.state.filteredArray) }</span>
