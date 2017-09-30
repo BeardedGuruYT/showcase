@@ -5,7 +5,7 @@ class FilterObject extends Component {
 constructor () {
     super();
         this.state={
-            unFilteredArray: [{
+            unfilteredArray: [{
                 name:"billy",
                 type: "dog",
                 age:10, 
