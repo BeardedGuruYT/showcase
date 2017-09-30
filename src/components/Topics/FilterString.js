@@ -28,12 +28,12 @@ class FilterString extends Component {
         return(
             <div className="puzzleBox filterStringPB">
                 <h4>Filter String</h4>
-                <span className="puzzleText">Cities: [{ this.state.unFilteredArray.map((s)=> " \"" + s + "\", ").join("") }]</span>
+                <span className="puzzleText">Cities: { JSON.stringify(this.state.unFilteredArray) }</span>
                 <input className="inputLine"
                         onChange={ (e)=> this.updateUserInput(e) }></input>
                 <button className="confirmationButton"
                         onClick={ (e)=> this.solve() }>Filter</button>
-                <span className="resultsBox filterStringRB">Filtered Cities: [{ this.state.filteredArray.map((s)=> " \"" + s + "\", ").join("") }]</span>
+                <span className="resultsBox filterStringRB">Filtered Cities: { JSON.stringify(this.state.filteredArray) }</span>
             </div>
         );
     }
