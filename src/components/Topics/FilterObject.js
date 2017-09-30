@@ -14,11 +14,11 @@ constructor () {
             {
                 name: "jefferson",
                 type: "bunny",
-                PoopsADay: 39,
+                poopsADay: 39,
             },
             {
                 name:"pally",
-                color:"bole/green",
+                color:"blue/green",
                 age:75,
             }],
 
@@ -44,12 +44,12 @@ constructor () {
         return(
             <div className="puzzleBox filterObjectPB">
                 <h4>Filter Objects</h4>
-                <span className="puzzleText">Original:  [{ unfilteredArray }] </span>
+                <span className="puzzleText">Original:  { JSON.stringify(this.state.unfilteredArray) } </span>
                 <input className="inputLine"
                         onChange ={(e)=> this.getUserInput(e)}></input>
                 <button className="confirmationButton"
                 onClick = {(e) => this.solve() }>Filter</button>
-                <span className="resultsBox filterObjectRB">Filtered: [{ filteredArray }]</span>
+                <span className="resultsBox filterObjectRB">Filtered: { JSON.stringify(this.state.filteredArray) }</span>
             </div>
         );
     }
