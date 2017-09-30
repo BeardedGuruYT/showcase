@@ -28,7 +28,6 @@ class EvenAndOdd extends Component {
 
 
     render() {
-        console.log(this.state);
         return(
             <div className="puzzleBox evenAndOddPB">
                 <h4>Evens and Odds</h4>

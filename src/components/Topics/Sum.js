@@ -19,7 +19,7 @@ class Sum extends Component {
 
     add() {
         this.setState({
-            sum: parseInt(this.state.number1) + parseInt(this.state.number2)
+            sum: parseFloat(this.state.number1) + parseFloat(this.state.number2)
         })
     }
 
