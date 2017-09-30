@@ -32,7 +32,7 @@ class FilterString extends Component {
                 <input className="inputLine"
                         onChange={ (e)=> this.updateUserInput(e) }></input>
                 <button className="confirmationButton"
-                        onClick={ (e)=> this.solve() }></button>
+                        onClick={ (e)=> this.solve() }>Filter</button>
                 <span className="resultsBox filterStringRB">Filtered Cities: [{ this.state.filteredArray.map((s)=> " \"" + s + "\", ").join("") }]</span>
             </div>
         );
