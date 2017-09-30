@@ -14,7 +14,7 @@ class Palindrome extends Component {
     }
 solve(){
     this.setState({
-        palindrome: this.state.palindrome.str.split('').reverse().join('') === str
+        palindrome: this.state.userInput.split('').reverse().join('') === this.state.userInput
     })
 }
 
@@ -22,12 +22,12 @@ solve(){
     render() {
         return (
             <div className="puzzleBox filterStringPB">
-                <h4>plindrome</h4>
+                <h4>Palindrome</h4>
                 <input className="inputLine"
                     onChange={(e) => this.updateUserInput(e)}></input>
                 <button className="confirmationButton"
-                    onClick={(e) => this.solve()} ></button>
-                <span className="resultsBox:">{ JSON.stringify(this.state.palindrome) }</span>
+                    onClick={(e) => this.solve()} >Check</button>
+                <span className="resultsBox palindromeRB">Palindrome: { this.state.palindrome.toString() }</span>
             </div>
         );
     }
